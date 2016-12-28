@@ -55,6 +55,7 @@ public class SubscribeActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         //5：解注册
+        EventBus.getDefault().removeAllStickyEvents();
         EventBus.getDefault().unregister(SubscribeActivity.this);
     }
 }
