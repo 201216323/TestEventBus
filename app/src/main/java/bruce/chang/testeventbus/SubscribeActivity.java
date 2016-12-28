@@ -45,6 +45,7 @@ public class SubscribeActivity extends AppCompatActivity {
     }
 
 
+
     //3：接收消息
     @Subscribe(threadMode = ThreadMode.MAIN, sticky = true)
     public void LocalMessageStick(LocalMessageStick localMessage) {
