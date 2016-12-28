@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_subscribe"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="bruce.chang.testeventbus.MainActivity">
-
-  <Button
-      android:id="@+id/bt_send"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="跳转到发送页面"
-      />
+    tools:context="bruce.chang.testeventbus.SubscribeActivity">
 
     <Button
-        android:id="@+id/bt_send_stick"
+        android:id="@+id/bt_send_to_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="发送粘性事件跳转到发送页面"
-        />
+        android:text="发送数据到主线程" />
+
+    <Button
+        android:id="@+id/bt_receive_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="接收粘性事件" />
 
     <TextView
         android:id="@+id/tv_receive_event"
@@ -28,4 +26,5 @@
         android:padding="10dp"
         android:text="接收数据区域"
         />
+
 </LinearLayout>
